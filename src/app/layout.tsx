@@ -9,7 +9,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Atléticas"
+  title: "Inteligencia Politica"
 };
 
 export default function RootLayout({
@@ -17,10 +17,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="pt-br">
       <body
-        className={`${poppins.className} w-screen h-screen flex items-center justify-center antialiased`}
+        className={`${poppins.className} w-screen h-screen flex items-center justify-center antialiased bg-gray-100`}
       >
         <NextAuthSessionProvider>
           {children}
